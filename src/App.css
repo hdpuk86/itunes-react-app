@@ -1,6 +1,6 @@
 .top-songs-container {
   color: #FFF;
-  background-color: #C1EDCC;
+  background-color: #98af9a;
   display: flex;
   justify-content: center;
 }
@@ -15,11 +15,20 @@
 }
 
 .song {
-  padding: 10px;
-  margin: 10px;
+  padding: 0px 0px 20px 0px;
+  margin: 0px 30px;
   border-bottom: 1px solid #B0C0BC;
 }
 
-.song-attr {
+.song-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.song-attr, .song-position {
   margin-left: 30px;
+}
+
+.song-position {
+  margin-bottom: 35px;
 }
