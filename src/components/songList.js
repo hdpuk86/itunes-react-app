@@ -4,8 +4,8 @@ import Song from './song.js';
 class SongList extends React.Component {
 
   render(){
-    const topSongs = this.props.topSongs.map((song) => {
-       return <Song songDetails={song} key={song.id.attributes['im:id']}></Song>
+    const topSongs = this.props.topSongs.map((song, index) => {
+       return <Song songDetails={song} position={index} key={song.id.attributes['im:id']}></Song>
     })
     return(
       <div className="song-list">
