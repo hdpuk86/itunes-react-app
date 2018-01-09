@@ -1,4 +1,5 @@
 import React from 'react';
+import Song from './song.js';
 
 class SongList extends React.Component {
 
@@ -6,6 +7,7 @@ class SongList extends React.Component {
     return(
       <div className="song-list">
         SongList
+        <Song/>
       </div>
     )
   }
