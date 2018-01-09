@@ -9,6 +9,7 @@ class Song extends React.Component {
         <p>{this.props.position + 1}</p>
         <img src={songDetails['im:image'][0].label} alt="single"/>
         <p>{songDetails['im:name'].label}</p>
+        <p>{songDetails['im:artist'].label}</p>
       </div>
     )
   }
