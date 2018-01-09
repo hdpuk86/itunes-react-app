@@ -3,9 +3,11 @@ import React from 'react';
 class Song extends React.Component {
 
   render(){
+    const songDetails = this.props.songDetails;
     return(
       <div className="song">
-        <p>{this.props.songDetails['im:name'].label}</p>
+        <img src={songDetails['im:image'][0].label} alt=""/>
+        <p>{songDetails['im:name'].label}</p>
       </div>
     )
   }
