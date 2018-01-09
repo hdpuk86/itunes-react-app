@@ -5,7 +5,7 @@ class Song extends React.Component {
   render(){
     return(
       <div className="song">
-        song
+        <p>{this.props.songDetails['im:name'].label}</p>
       </div>
     )
   }
