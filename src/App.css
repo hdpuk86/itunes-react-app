@@ -6,14 +6,15 @@
 }
 
 .song-list {
-  text-align: center;
   background-color: #191919;
   width: 50%;
 }
 
+.heading {
+  text-align: center;
+}
+
 .song {
-  display: flex;
-  flex-direction: row;
   padding: 10px;
   margin: 10px;
   border-bottom: 1px solid #B0C0BC;

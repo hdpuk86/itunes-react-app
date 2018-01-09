@@ -7,10 +7,14 @@ class Song extends React.Component {
     const songImage = songDetails['im:image'][2];
     return(
       <div className="song">
+        <p className="song-attr">{this.props.position + 1}. {songDetails['im:name'].label}</p>
         <img className="song-attr" src={songImage.label} alt="single" height={songImage.attributes.height}/>
-        <p className="song-attr">{this.props.position + 1}</p>
-        <p className="song-attr">{songDetails['im:name'].label}</p>
-        <p className="song-attr">{songDetails['im:artist'].label}</p>
+        <section>
+          <p className="song-attr">{songDetails['im:name'].label}</p>
+          <p className="song-attr">{songDetails['im:artist'].label}</p>
+          <p className="song-attr">{songDetails.category.attributes.label}</p>
+          <p className="song-attr">{songDetails['im:price'].label}</p>
+        </section>
       </div>
     )
   }
